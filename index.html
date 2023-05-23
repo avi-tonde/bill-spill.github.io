@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- New Commit test -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bill Spill: Micro Project 3</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>BILL</h2>
+        <h2>SPILL</h2>
+    </div>
+
+    <div class="container">
+        <div class="leftSection">
+            <div class="label"> 
+                <label for="billInput">Bill</label>
+            </div>
+            <div class="inputContainer">
+                <input type="number" name="billInput" id="billInput" placeholder="0.00">
+                <img src="./images/rs.svg" alt="Rupee-icon" />
+            </div>
+
+            <div class="label">
+                <label for="Tip">Select Tip %</label>
+            </div>
+            <div class="tipBtnContainer">
+                <button class="tipPercent">5%</button>
+                <button class="tipPercent">10%</button>
+                <button class="tipPercent">15%</button>
+
+                <button class="tipPercent">25%</button>
+                <button class="tipPercent">50%</button>
+                <button class="tipPercent">75%</button>
+            </div>
+
+
+            <div class="label">
+                <label for="peopleCount">Number Of People</label>
+                <p id="warn"></p>
+            </div>
+            <div class="inputContainer">
+                <input type="number" name="peopleCount" id="peopleCount" placeholder="1">
+                <img src="./images/people.svg" alt="people-icon" />
+            </div>
+
+            <button class="generateBill" onclick="generateBill()">Generate Bill</button>
+        </div>
+
+        <div class="rightSection">
+            <div class="billDisplay">
+                <div class="billDesc">
+                    <p>Tip Amount <br /> <span>/ person</span></p>
+                    <div class="totalAmt">₹ 0.00</div>
+                </div>
+                <div class="billDesc">
+                    <p>Total <br /> <span>/ person</span></p>
+                    <div class="totalAmt">₹ 0.00</div>
+                </div>
+            </div>
+            <button class="reset ">RESET</button>
+
+        </div>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+
+</html>

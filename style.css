@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #D6BCFF;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #6F3CFF;
+}
+
+.container {
+    background: #fff;
+    box-shadow: -1px 6px 55px rgba(0, 0, 0, 0.16);
+    border-radius: 21px;
+}
+
+.leftSection {
+    position: relative;
+    padding: 30px;
+}
+
+.rightSection {
+    background: #9C60FF;
+    border-radius: 11px;
+    padding: 50px 20px;
+}
+
+.label {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 14px;
+    color: #9C60FF;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    position: relative;
+
+}
+
+.inputContainer input {
+    margin-block: 0 40px;
+    padding: 10px;
+    font-size: 20px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background: rgba;
+    background: rgba(182, 172, 196, 0.53);
+    text-align: right;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 700;
+    color: #9C60FF;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+.inputContainer img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.tipBtnContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tipBtnContainer button {
+    padding: 10px;
+    background: #9C60FF;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tipBtnContainer button.active {
+    background-color: #b184fa;
+    ;
+}
+
+.billDesc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.billDesc p {
+    font-family: cursive;
+    color: #F3E4FF;
+    font-weight: 600;
+}
+
+.billDesc p span {
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 0.045em;
+    color: #C39FFF;
+}
+
+.totalAmt {
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #C39FFF;
+
+}
+
+.generateBill {
+    font-family: monospace;
+    border-radius: 9px;
+    padding: 15px;
+    width: 250px;
+    border: none;
+    background: #FBFAFB;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.43);
+    color: #9C60FF;    
+    font-weight: 700;
+    cursor: pointer;
+    display: flow-root;
+    margin: 5px auto;
+}
+
+.reset {
+    font-family: monospace;
+    border-radius: 2px;
+    padding: 15px;
+    width: 250px;
+    border: none;
+    background: #C39FFF;
+    /* box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.43); */
+    color: #9C60FF;    
+    font-weight: 700;
+    cursor: pointer;
+    display: flow-root;
+    margin: 5px auto;
+}
+
+.btn_active {
+    background: #6F3CFF;
+    color: white;
+}
+.btn_active_reset {
+    background: white;
+    color: #6F3CFF;
+}
+
+
+@media screen and (min-width : 768px) {
+    .container{
+        display: flex;
+        padding: 2rem;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .leftSection{
+        width: 50%;
+    }
+    .rightSection{
+        width: 50%;
+    }
+    .reset {
+        margin-top: 40%;
+    }
+}
